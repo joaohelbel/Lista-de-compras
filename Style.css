@@ -1,0 +1,27 @@
+img {
+    max-width: 100%;
+}
+
+.limitador {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.navbar{
+    background-color: #13131F;
+}
+.lista{
+    text-align: center;
+}
+.carrinho{
+    background-color: cadetblue;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.it{
+    border: 2px solid cadetblue;
+}
+.btnn{
+    background-color: cadetblue;
+    border: hidden;
+    border-radius: 12px;
+}
