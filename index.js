@@ -1,23 +1,23 @@
-let total = 0;
+async function addItem(){
+    
+    let inpNm = document.getElementById("inpNm");
+    let price = document.getElementById("price");
 
-function addItem() {
-    const itemInput = document.getElementById("item");
-    const priceInput = document.getElementById("price");
-    const item = itemInput.value;
-    const price = parseFloat(priceInput.value);
+    let nome = inpNm.value;
+    let preço = price.value;
 
-    if (isNaN(price) || price <= 0) {
-        alert("Por favor, insira um preço válido.");
+    if(!nome){
+        alert("Nome invalido!");
+        return;
+    }
+    if(!preço){
+        alert("Preço invalido!");
         return;
     }
 
-    const listItem = document.createElement("li");
-    listItem.textContent = `${item}: R$${price.toFixed(2)}`;
-    document.getElementById("shoppingList").appendChild(listItem);
+    let produto = {
+        nome: nome,
+        preço: price
+    }
 
-    total += price;
-    document.getElementById("total").textContent = total.toFixed(2);
-
-    itemInput.value = "";
-    priceInput.value = "";
 }
