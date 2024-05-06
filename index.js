@@ -16,6 +16,7 @@ async function addItem() {
         alert("Preço invalido!");
         return;
     }
+<<<<<<< Updated upstream
     if (!quantidade) {
         alert("Quantidade invalido!");
         return;
@@ -97,3 +98,14 @@ async function listar() {
     }
 
 }
+=======
+
+    let produto = {
+        nome: nome,
+        price: price
+    }
+
+    
+
+}
+>>>>>>> Stashed changes
